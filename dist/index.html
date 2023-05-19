@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Box</title>
+    <!-- FONT AWESOME CDN START  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME CDN END -->
+    <!-- GOOGLE FONTS START  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- RALEWAY  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OPEN SANS  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CARDO  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS END -->
+    <!-- JQUERY CSS  -->
+    <link rel="stylesheet" href="../css/slick.css" />
+    <!-- TAILWIND CSS LINK START -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- TAILWIND CSS LINK END -->
+    <!-- MY CSS START-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- MY CSS END-->
+    <!-- RESPONSIVE CSS START  -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- RESPONSIVE CSS END -->
+  </head>
+  <body>
+    <!-- ===========================
+      NAVBAR START
+    ===========================  -->
+    <nav
+      class="absolute top-0 left-0 w-full h-[100px] flex items-center z-[9999]"
+    >
+      <div class="container mx-auto">
+        <div class="nav_container flex justify-between items-center px-3">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./../img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="menu hidden md:block">
+            <div class="menu_item">
+              <ul
+                class="flex gap-[60px] text-[#ffffff] font-[700] text-[13px] leading-[59.83px] font-raleway"
+              >
+                <li><a href="#banner">Features</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#download">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="responsive_menu relative md:hidden w-full flex justify-end items-center"
+          >
+            <div class="responsive_btn">
+              <button class="text-myWhite">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <div
+              class="responsive_items absolute right-0 top-full hidden bg-slate-600 p-2 rounded-md w-[130%]"
+            >
+              <ul
+                class="block text-[#ffffff] font-[700] text-[13px] leading-[59.83px] font-raleway text-center"
+              >
+                <li><a href="#banner">Features</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#download">Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ===========================
+      NAVBAR END
+    ===========================  -->
+    <!-- ===========================
+      BANNER START
+    ===========================  -->
+    <section
+      id="banner"
+      class="bg-[url('../img/banner.jpg')] bg-center bg-cover bg-no-repeat"
+    >
+      <div
+        class="overlay bg-[#2a2e48]/90 pt-[80px] md:pt-[120px] pb-[100px] md:pb-[200px] lg:pt-[156px] lg:pb-[255px]"
+      >
+        <div class="container mx-auto text-center">
+          <div class="heading">
+            <h1
+              class="font-bold text-[30px] sm:text-[35px] md:text-[45px] lg:text-[65px] lg:leading-[71px] text-[#ffffff] uppercase font-open"
+            >
+              <div>Your Favorite One Page</div>
+              <div>Multi Purpose Template</div>
+            </h1>
+            <p
+              class="font-raleway md:text-[18px] text-[12px] sm:text-[14px] px-2 md:px-0 lg:text-[22px] lg:leading-[33px] text-[#ffffff] max-w-[930px] mx-auto pt-[23px] pb-[60px] lg:pb-[115px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              commodo cursus magna vel scelerisque nisl consectetur et.
+            </p>
+          </div>
+
+          <div class="btn">
+            <button
+              class="w-[200px] h-[45px] text-myWhite bg-myRed rounded uppercase text-[13px] font-[600] font-raleway"
+            >
+              Find Out More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+      BANNER END
+    ===========================  -->
+    <!-- ===========================
+      WORKS START
+    ===========================  -->
+    <section id="works">
+      <div class="container mx-auto">
+        <div
+          class="works_container grid md:grid-cols-2 lg:grid-cols-3 gap-y-[77px] pt-[120px] pb-[128px]"
+        >
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_1.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_2.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_3.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_4.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_5.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+          <!-- item start  -->
+          <div class="item text-center">
+            <div class="icon">
+              <img src="../img/work_6.png" alt="image" class="mx-auto" />
+            </div>
+            <div class="info">
+              <h3
+                class="pt-[34px] pb-[30px] font-bold text-[14px] leading-[14px] text-myBlack"
+              >
+                Easily Customised
+              </h3>
+              <p
+                class="text-[14px] leading-[21px] text-myGray max-w-[300px] mx-auto"
+              >
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+          <!-- item end -->
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+      WORKS END
+    ===========================  -->
+    <!-- ===========================
+      WORK_2 START
+    ===========================  -->
+    <section id="works_2" class="z-[999]">
+      <div class="works_2_container grid grid-cols-4">
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img
+              src="../img/pic_1.jpg"
+              alt="image"
+              class="max-h-[246px] w-full"
+            />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_2.jpg" alt="image" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_3.jpg" alt="image" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_4.jpg" alt="image" class="max-h-[246px]" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img
+              src="../img/pic_5.jpg"
+              alt="image"
+              class="max-h-[245px] w-full"
+            />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_6.jpg" alt="image" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_7.jpg" alt="image" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+        <!-- item start  -->
+        <div class="myItem relative group cursor-pointer">
+          <picture>
+            <img src="../img/pic_8.jpg" alt="image" class="max-h-[245px]" />
+          </picture>
+          <div
+            class="overlay bg-myRed/80 absolute w-full h-full top-0 left-0 text-white hidden group-hover:flex items-center justify-center flex-col duration-1000"
+          >
+            <h3 class="font-bold text-[14px] leading-[30px]">Project Name</h3>
+            <p class="text-[14px] leading-[14px]">User Interface Design</p>
+          </div>
+        </div>
+        <!-- item end -->
+      </div>
+    </section>
+    <!-- ===========================
+      WORK_2 END
+    ===========================  -->
+    <!-- ===========================
+      TEAM START
+    ===========================  -->
+    <section id="team" class="mt-[100px] mb-[50px] scroll-mt-[100px]">
+      <div class="container mx-auto">
+        <div
+          class="team_container grid md:grid-cols-2 lg:grid-cols-4 gap-[30px]"
+        >
+          <!-- items start  -->
+          <div class="item text-left">
+            <div class="image">
+              <picture>
+                <img src="../img/team_1.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="bio">
+              <h3
+                class="text-[22px] leading-[22px] text-myBlack pt-[35px] pb-[16px]"
+              >
+                Ruth Woods
+              </h3>
+              <span
+                class="text-[13px] leading-[13px] text-myRed block pb-[30px]"
+                >Founder, CEO</span
+              >
+              <p class="text-[14px] leading-[21px] text-myGray max-w-[250px]">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <div class="social_links flex gap-1 pt-[30px]">
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- items end -->
+          <!-- items start  -->
+          <div class="item text-left">
+            <div class="image">
+              <picture>
+                <img src="../img/team_2.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="bio">
+              <h3
+                class="text-[22px] leading-[22px] text-myBlack pt-[35px] pb-[16px]"
+              >
+                Ruth Woods
+              </h3>
+              <span
+                class="text-[13px] leading-[13px] text-myRed block pb-[30px]"
+                >Founder, CEO</span
+              >
+              <p class="text-[14px] leading-[21px] text-myGray max-w-[250px]">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <div class="social_links flex gap-1 pt-[30px]">
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- items end -->
+          <!-- items start  -->
+          <div class="item text-left">
+            <div class="image">
+              <picture>
+                <img src="../img/team_3.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="bio">
+              <h3
+                class="text-[22px] leading-[22px] text-myBlack pt-[35px] pb-[16px]"
+              >
+                Ruth Woods
+              </h3>
+              <span
+                class="text-[13px] leading-[13px] text-myRed block pb-[30px]"
+                >Founder, CEO</span
+              >
+              <p class="text-[14px] leading-[21px] text-myGray max-w-[250px]">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <div class="social_links flex gap-1 pt-[30px]">
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- items end -->
+          <!-- items start  -->
+          <div class="item text-left">
+            <div class="image">
+              <picture>
+                <img src="../img/team_4.jpg" alt="image" />
+              </picture>
+            </div>
+            <div class="bio">
+              <h3
+                class="text-[22px] leading-[22px] text-myBlack pt-[35px] pb-[16px]"
+              >
+                Ruth Woods
+              </h3>
+              <span
+                class="text-[13px] leading-[13px] text-myRed block pb-[30px]"
+                >Founder, CEO</span
+              >
+              <p class="text-[14px] leading-[21px] text-myGray max-w-[250px]">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh, ut fermentum massa justo sit amet risus.
+                Maecenas sed diam eget risus varius blandit sit amet non magna.
+                Nullam quis risus eget urna mollis ornare vel eu leo.
+              </p>
+              <div class="social_links flex gap-1 pt-[30px]">
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-facebook-f text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-twitter text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+                <a
+                  href="#"
+                  class="h-[40px] w-[40px] border flex items-center justify-center group"
+                >
+                  <i
+                    class="fa-brands fa-linkedin text-myGray_lite group-hover:text-blue-500 duration-[500ms]"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- items end -->
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+      TEAM END
+    ===========================  -->
+    <!-- ===========================
+      DOWNLOAD START
+    ===========================  -->
+    <section id="testimonial" class="pt-[50px] pb-[50px] scroll-mt-[100px]">
+      <div class="download_section grid grid-cols-2 pb-[50px]">
+        <div class="image">
+          <picture class="h-[100%]">
+            <img src="../img/download.jpg" alt="image" class="h-[100%]" />
+          </picture>
+        </div>
+        <div class="slider">
+          <div class="my_slider h-[100%] bg-myCoffee flex items-center">
+            <!-- item start  -->
+            <div class="slide_item md:ps-[86px] h-[100%]">
+              <p
+                class="font-cardo italic text-[16px] md:text-[28px] lg:text-[36px] leading-[42px] text-white pb-1 lg:pb-[40px]"
+              >
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <span
+                class="font-raleway font-bold text-[8px] lg:text-[13px] leading-[21px] text-white"
+              >
+                Susan Sims, Interaction Designer at XYZ
+              </span>
+            </div>
+            <!-- item end -->
+            <!-- item start  -->
+            <div class="slide_item md:ps-[86px] h-[100%]">
+              <p
+                class="font-cardo italic text-[16px] md:text-[28px] lg:text-[36px] leading-[42px] text-white pb-1 lg:pb-[40px]"
+              >
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <span
+                class="font-raleway font-bold text-[8px] lg:text-[13px] leading-[21px] text-white"
+              >
+                Susan Sims, Interaction Designer at XYZ
+              </span>
+            </div>
+            <!-- item end -->
+            <!-- item start  -->
+            <div class="slide_item md:ps-[86px] h-[100%]">
+              <p
+                class="font-cardo italic text-[16px] md:text-[28px] lg:text-[36px] leading-[42px] text-white pb-1 lg:pb-[40px]"
+              >
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <span
+                class="font-raleway font-bold text-[8px] lg:text-[13px] leading-[21px] text-white"
+              >
+                Susan Sims, Interaction Designer at XYZ
+              </span>
+            </div>
+            <!-- item end -->
+            <!-- item start  -->
+            <div class="slide_item md:ps-[86px] h-[100%]">
+              <p
+                class="font-cardo italic text-[16px] md:text-[28px] lg:text-[36px] leading-[42px] text-white pb-1 lg:pb-[40px]"
+              >
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <span
+                class="font-raleway font-bold text-[8px] lg:text-[13px] leading-[21px] text-white"
+              >
+                Susan Sims, Interaction Designer at XYZ
+              </span>
+            </div>
+            <!-- item end -->
+            <!-- item start  -->
+            <div class="slide_item md:ps-[86px] h-[100%]">
+              <p
+                class="font-cardo italic text-[16px] md:text-[28px] lg:text-[36px] leading-[42px] text-white pb-1 lg:pb-[40px]"
+              >
+                “Integer posuere erat a ante venenatis dapibus posuere velit
+                aliquet. Donec sed odio dui. Aenean eu leo quam...”
+              </p>
+              <span
+                class="font-raleway font-bold text-[8px] lg:text-[13px] leading-[21px] text-white"
+              >
+                Susan Sims, Interaction Designer at XYZ
+              </span>
+            </div>
+            <!-- item end -->
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="download"
+        class="download_section_2 text-center pt-[50px] scroll-mt-[100px]"
+      >
+        <div class="heading">
+          <h3>Are You Ready to Start? Download Now For Free!</h3>
+          <p
+            class="font-raleway font-bold text-[13px] leading-[21px] text-myBlack pt-[12px] pb-[35px]"
+          >
+            Fusce dapibus, tellus ac cursus commodo
+          </p>
+        </div>
+        <div class="download_btn">
+          <button class="common_btn">Download Here</button>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+      DOWNLOAD END
+    ===========================  -->
+    <!-- ===========================
+      FOOTER START
+    ===========================  -->
+    <footer class="bg-footerBg pt-[70px]">
+      <div class="container mx-auto">
+        <div
+          class="upper_part grid lg:grid-cols-3 gap-4 lg:gap-0 text-center text-white pb-[90px]"
+        >
+          <div class="item">
+            <h3 class="uppercase font-bold text-[14px]">location</h3>
+            <p
+              class="max-w-[170px] mx-auto opacity-[70%] pt-[20px] font-[400] text-[14px] leading-[22.5px]"
+            >
+              3481 Melrose Place Beverly Hills, CA 90210
+            </p>
+          </div>
+          <div class="item">
+            <h3 class="uppercase font-bold">Share with Love</h3>
+            <div class="social_links flex justify-center pt-[20px] gap-1">
+              <a
+                href="#"
+                class="h-[40px] w-[40px] border-[2px] flex justify-center items-center group"
+              >
+                <i
+                  class="fa-brands fa-facebook-f group-hover:text-blue-500 duration-[500ms]"
+                >
+                </i>
+              </a>
+              <a
+                href="#"
+                class="h-[40px] w-[40px] border-[2px] flex items-center justify-center group"
+              >
+                <i
+                  class="fa-brands fa-twitter group-hover:text-blue-500 duration-[500ms]"
+                >
+                </i>
+              </a>
+              <a
+                href="#"
+                class="h-[40px] w-[40px] border-[2px] flex items-center justify-center group"
+              >
+                <i
+                  class="fa-brands fa-linkedin group-hover:text-blue-500 duration-[500ms]"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <h3 class="uppercase font-bold">About ActiveBox</h3>
+            <p
+              class="max-w-[350px] mx-auto opacity-[70%] pt-[20px] font-[400] text-[14px] leading-[22.5px]"
+            >
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+              ullamcorper nulla non metus auctor fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lower_part text-center text-white/40 bg-footerBg_2 py-[30px]">
+        <div class="container mx-auto">
+          <p class="max-w-[355px] mx-auto">
+            Copyright © 2015 ActiveBox. All Rights Reserved Made with
+            <span class="text-white font-bold"
+              ><i class="text-red-400 mr-1 fa-solid fa-heart"></i>by Kamal
+              Chaneman</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ===========================
+      FOOTER END
+    ===========================  -->
+    <!-- ===========================
+      NAVBAR START
+    ===========================  -->
+    <!-- ===========================
+      NAVBAR END
+    ===========================  -->
+    <!-- JQUERY VERSION  -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- SLIDER JS  -->
+    <script src="./js/slick.min.js"></script>
+    <!-- MY JS  -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

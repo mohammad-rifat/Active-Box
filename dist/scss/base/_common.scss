@@ -1,0 +1,17 @@
+@import '../variable/variable';
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: $font-family-raleway;
+}
+ul{
+    display: flex;
+}
+a{
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}

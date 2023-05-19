@@ -1,0 +1,19 @@
+nav.sticky {
+  animation-name: sticky_bar;
+  animation-timing-function: ease-in;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-direction: normal;
+  position: fixed;
+  background-color: #2b2e48;
+  height: 60px;
+  z-index: 9999 !important;
+}
+@keyframes sticky_bar {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}

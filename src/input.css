@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .common_btn {
+    @apply w-[200px] h-[45px] text-myWhite bg-myRed rounded uppercase text-[13px] font-[600] font-raleway;
+  }
+}
